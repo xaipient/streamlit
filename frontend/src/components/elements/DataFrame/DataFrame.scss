@@ -19,8 +19,8 @@
 .reportview-container {
   .dataframe {
     font-size: 0.8rem;
-    font-family: "IBM Plex Mono", monospace;
-    text-align: right;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
     padding: 0.5rem;
     line-height: 1;
   }
@@ -33,7 +33,7 @@
   .dataframe.row-header,
   .dataframe.col-header,
   .dataframe.corner {
-    background-color: $gray-lightest;
+    background-color: #273346;
     color: #768096;
     z-index: 1;
   }
