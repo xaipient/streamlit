@@ -9,6 +9,7 @@
 ```bash
 # no need to clone the whole repository
 # download file lib/dist/streamlit-0.61.0-py2.py3-none-any.whl
+
 # remove the current streamlit
 pip uninstall streamlit -y
 
