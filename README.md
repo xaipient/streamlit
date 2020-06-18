@@ -13,15 +13,11 @@
 # remove the current streamlit
 pip uninstall streamlit -y
 
-# optional - remove all dependencies and start over
-pip freeze | xargs pip uninstall -y
+# optional 
 pip install pipenv
 
 # install the built wheel
-pip install xxx/lib/dist/xxxxx.whl
-
-# install all xaipient dependencies
-....
+pip install xxxxx.whl
 
 # fix a protobuf version issue
 pip uninstall protobuf
