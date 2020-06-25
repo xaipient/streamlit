@@ -26,15 +26,15 @@
   }
 
   .dataframe-container {
-    border: 1px solid $gray-lightest;
+    border: none;
     box-sizing: content-box; /* Fix borders going under other elements. */
   }
 
   .dataframe.row-header,
   .dataframe.col-header,
   .dataframe.corner {
-    background-color: #273346;
-    color: #768096;
+    background-color: #354155;
+    color: #bec2c7;
     z-index: 1;
   }
 
