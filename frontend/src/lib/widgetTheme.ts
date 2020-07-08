@@ -43,6 +43,9 @@ const textMargin = SCSS_VARS["$font-size-sm"]
 const tinyTextMargin = SCSS_VARS["$m1-2-font-size-sm"]
 const white = SCSS_VARS.$white
 
+// components specific styles
+const tag_background = SCSS_VARS["$tag-bg"]
+
 const fontStyles = {
   fontFamily: fontFamilySans,
   fontSize: fontSizeBase,
@@ -486,12 +489,12 @@ const themeOverrides = {
   },
 
   colors: {
-    white,
-    black,
-    primary,
+    white: white,
+    black: black,
+    primary: primary,
     primaryA: primary,
     accent: primaryA50,
-    tagPrimarySolidBackground: primary,
+    tagPrimarySolidBackground: tag_background,
     borderFocus: primary,
     contentPrimary: black,
     inputFill: grayLightest,
@@ -548,7 +551,15 @@ export const sidebarWidgetTheme = createTheme(mainThemePrimitives, {
     sliderHandleInnerFill: grayLight,
     sliderHandleInnerFillDisabled: grayLight,
   },
-})
+  {
+    ...themeOverrides,
+    colors: {
+      ...themeOverrides.colors,
+      inputFill: white,
+      inputFillActive: white,
+    },
+  }
+)
 
 // Log the widget theme just for debug purposes.
 logMessage("mainWidgetTheme", mainWidgetTheme)
