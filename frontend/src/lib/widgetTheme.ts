@@ -37,6 +37,7 @@ const tinyTextMargin = SCSS_VARS["$m1-2-font-size-sm"]
 const spacer = SCSS_VARS.$spacer
 const gutter = SCSS_VARS.$gutter
 
+
 // Using this calculator instead to work with spacer
 const spacingCalculator = (spacing?: number): string => {
   if (!spacing) {
@@ -79,7 +80,10 @@ export const colors = {
   disabledColor: SCSS_VARS.$gray,
 }
 
-export const fontStyles = {
+// components specific styles
+const tag_background = SCSS_VARS["$tag-bg"]
+
+const fontStyles = {
   fontFamily: fontFamilySans,
   fontSize: fontSizeBase,
   fontSizeSm,
@@ -474,7 +478,7 @@ export const themeOverrides = {
     primary: colors.primary,
     primaryA: colors.primary,
     accent: colors.primaryA50,
-    tagPrimarySolidBackground: colors.primary,
+    tagPrimarySolidBackground: tag_background,
     borderFocus: colors.primary,
     contentPrimary: colors.black,
     inputFill: colors.grayLightest,
@@ -542,7 +546,15 @@ export const sidebarWidgetTheme = createTheme(mainThemePrimitives, {
 
     progressbarTrackFill: colors.grayLight,
   },
-})
+  {
+    ...themeOverrides,
+    colors: {
+      ...themeOverrides.colors,
+      inputFill: white,
+      inputFillActive: white,
+    },
+  }
+)
 
 // Log the widget theme just for debug purposes.
 logMessage("mainWidgetTheme", mainWidgetTheme)
