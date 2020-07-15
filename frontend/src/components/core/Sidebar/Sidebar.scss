@@ -41,9 +41,10 @@
   }
 
   .sidebar-content {
-    background-color: $gray-200;
-    background-image: linear-gradient(to bottom, $gray-200, $gray-100);
-    background-attachment: fixed;
+    background-color: #354155;
+    background-image: url("https://raw.githubusercontent.com/youozhan/design-ai/master/Frame05.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     box-sizing: border-box;
     flex-shrink: 0;
     height: 100vh;

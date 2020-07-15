@@ -16,17 +16,17 @@
 // like multi-line comments)
 
 // Overwrite some basic colors.
-$white: #ffffff;
+$white: #273346;
 $gray-050: #fafafa;
-$gray-100: #fafafa;
-$gray-200: #f0f2f6;
+$gray-100: #354155;
+$gray-200: #354155;
 $gray-300: #e6eaf1;
 $gray-400: #d5dae5;
 $gray-500: #bfc5d3;
 $gray-600: #a3a8b4;
 $gray-700: #808495;
 $gray-800: #555867;
-$gray-900: #262730;
+$gray-900: #ffffff;
 $gray-1000: #0e1117;
 $black: $gray-900;
 $red: #ff2b2b;
@@ -45,17 +45,20 @@ $gray-darker: $gray-900;
 $yellow-light: #fffd80;
 
 // Overwrite some theme colors.
-$primary: #f63366;
+$primary: #bdcdff;
 $secondary: $gray;
 $light: $gray-100;
 $dark: $gray;
+
+// Overwrite the components style
+$tag-bg: #7792e3;
 
 $primary-a50: change-color($primary, $alpha: 0.5);
 $white-a50: #ffffff88;
 $white-a25: #ffffff44;
 
 // Overwrite some theme fonts settings.
-$font-family-sans-serif: "IBM Plex Sans", sans-serif;
+$font-family-sans-serif: "Open Sans", sans-serif;
 $font-family-monospace: "IBM Plex Mono", monospace;
 
 // 1rem == 16px
@@ -86,7 +89,7 @@ $m1-2-font-size-base: $font-size-base / 2; // m1-2 = multiply by 1/2
 
 // Layout sizing
 $sidebar-width: 21rem;
-$content-max-width: 730px; // This number comes from bootstrap.
+$content-max-width: 1024px; // This number comes from bootstrap.
 $header-height: 3.5rem;
 $top-margin: 5rem;
 $bottom-margin: $top-margin * 2;

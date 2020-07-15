@@ -91,3 +91,32 @@
   src: url("/assets/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf")
     format("truetype");
 }
+
+/* Open Sans, regular */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: regular;
+  src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: regular;
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-style: regular;
+  src: url("../fonts/Open_Sans/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: regular;
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+}
