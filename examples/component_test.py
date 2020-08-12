@@ -10,7 +10,8 @@ st.title("COMPONENT TEST")
 prediction_score = 45
 prediction_result = "Negative"
 
-components.html(f"""
+components.html(
+    f"""
                 <div style="font-family: 'Open Sans'; display: flex; flex-direction: row;">
                 <script>
                      document.head.innerHTML += '<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">'
@@ -32,15 +33,17 @@ components.html(f"""
                     </div>
                 </div>
                 </div>
-                """, height=80)
+                """,
+    height=80,
+)
 
 # Test react table component
 # Test imported component
 raw_data = {
-        "First Name": ["Jason", "Molly", "Tina", "Jake", "Amy"],
-        "Last Name": ["Miller", "Jacobson", "Ali", "Milner", "Smith"],
-        "Age": [42, 52, 36, 24, 73],
-    }
+    "First Name": ["Jason", "Molly", "Tina", "Jake", "Amy"],
+    "Last Name": ["Miller", "Jacobson", "Ali", "Milner", "Smith"],
+    "Age": [42, 52, 36, 24, 73],
+}
 df = pd.DataFrame(raw_data, columns=["First Name", "Last Name", "Age"])
 
 rows = tb.selectable_data_table(df)
@@ -49,4 +52,5 @@ if rows:
     bt_click = bt.my_component(rows)
     if bt_click:
         st.markdown(
-            f"""Selected data points {', '.join([str(row) for row in rows])} classified as 'bad' (45%)""")
+            f"""Selected data points {', '.join([str(row) for row in rows])} classified as 'bad' (45%)"""
+        )
