@@ -546,15 +546,7 @@ export const sidebarWidgetTheme = createTheme(mainThemePrimitives, {
 
     progressbarTrackFill: colors.grayLight,
   },
-  {
-    ...themeOverrides,
-    colors: {
-      ...themeOverrides.colors,
-      inputFill: white,
-      inputFillActive: white,
-    },
-  }
-)
+})
 
 // Log the widget theme just for debug purposes.
 logMessage("mainWidgetTheme", mainWidgetTheme)
