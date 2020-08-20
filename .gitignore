@@ -13,6 +13,7 @@ eggs/
 .eggs/
 *.egg-info/
 *.egg
+venv
 
 # Unit test / coverage reports
 .coverage
