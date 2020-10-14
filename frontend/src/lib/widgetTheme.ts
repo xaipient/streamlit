@@ -83,7 +83,7 @@ export const colors = {
 // components specific styles
 const tag_background = SCSS_VARS["$tag-bg"]
 
-const fontStyles = {
+export const fontStyles = {
   fontFamily: fontFamilySans,
   fontSize: fontSizeBase,
   fontSizeSm,

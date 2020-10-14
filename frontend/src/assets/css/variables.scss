@@ -40,7 +40,7 @@ $secondary: $gray;
 $light: $gray-100;
 $dark: $gray;
 $disabled: $gray-lighter;
-$danger: rgb(157, 41, 45);
+$danger: rgb(255, 145, 145);
 
 // Overwrite the components style
 $tag-bg: #7792e3;
@@ -112,3 +112,20 @@ $code-color: #09ab3b;
 $kbd-color: $code-color;
 $kbd-bg: $gray-faint;
 $pre-color: $black;
+
+// Alert
+$alert-info-background-color: change-color($blue, $alpha: 0.1);
+$alert-info-border-color: change-color($blue, $alpha: 0.1);
+$alert-info-text-color: rgb(134, 207, 218);
+
+$alert-success-background-color: change-color($green, $alpha: 0.2);
+$alert-success-border-color: change-color($green, $alpha: 0.2);
+$alert-success-text-color: rgb(127, 211, 153);
+
+$alert-error-background-color: change-color($red, $alpha: 0.2);
+$alert-error-border-color: change-color($red, $alpha: 0.2);
+$alert-error-text-color: $danger;
+
+$alert-warning-background-color: change-color($yellow, $alpha: 0.2);
+$alert-warning-border-color: change-color($yellow, $alpha: 0.8);
+$alert-warning-text-color: rgb(249, 227, 156);
