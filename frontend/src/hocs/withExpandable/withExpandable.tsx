@@ -95,6 +95,7 @@ function withExpandable(
               paddingRight: "0",
               paddingTop: "0.5em",
               fontWeight: 500,
+              backgroundColor: colors.transparent,
               ":hover": {
                 borderBottomColor: colors.primary,
               },
