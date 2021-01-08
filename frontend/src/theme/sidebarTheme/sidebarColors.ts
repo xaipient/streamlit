@@ -9,6 +9,7 @@ const genericColors = {
   success: "#7fd399",
   warning: "#f9e39c",
   primary: "#bdcdff",
+  tagBg: "#7792e3",
   disabled: colors.gray30,
   secondary: colors.gray60,
   lightestGray: colors.gray20,
