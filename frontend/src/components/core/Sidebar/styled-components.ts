@@ -57,12 +57,16 @@ export interface StyledSidebarContentProps {
 export const StyledSidebarContent = styled.div<StyledSidebarContentProps>(
   ({ isCollapsed, theme }) => ({
     backgroundColor: theme.colors.lightestGray,
-    backgroundImage: `linear-gradient(to bottom, ${theme.colors.lightestGray}, ${theme.colors.gray10})`,
+    backgroundImage:
+      "url(" +
+      "https://raw.githubusercontent.com/youozhan/design-ai/master/Frame05.png" +
+      ")",
+    backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
     flexShrink: 0,
     height: "100vh",
-    overflow: "auto",
-    padding: `5rem ${theme.spacing.lg}`,
+    overflow: "hidden",
+    padding: `0 ${theme.spacing.sm}`,
     position: "relative",
     transition: "margin-left 300ms, box-shadow 300ms",
     width: theme.sizes.sidebar,

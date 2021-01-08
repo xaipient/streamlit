@@ -1,5 +1,5 @@
 export const fonts = {
-  sansSerif: "IBM Plex Sans, sans-serif",
+  sansSerif: "Open Sans, sans-serif",
   mono: "IBM Plex Mono, monospace",
 }
 

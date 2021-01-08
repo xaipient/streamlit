@@ -15,6 +15,4 @@
  * limitations under the License.
  */
 
-@mixin element-margin-bottom {
-  margin: 0 0 2rem 0;
-}
+export { default } from "./Text"

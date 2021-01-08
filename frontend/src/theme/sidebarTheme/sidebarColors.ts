@@ -3,12 +3,12 @@ import { colors } from "../primitives/colors"
 
 const genericColors = {
   ...colors,
-  bodyText: colors.gray90,
-  danger: "#9d292d",
-  info: "#1e6777",
-  success: "#176c36",
-  warning: "#947c2d",
-  primary: "#f63366",
+  bodyText: "#ffffff",
+  danger: "#ff9191",
+  info: "#86cfda",
+  success: "#7fd399",
+  warning: "#f9e39c",
+  primary: "#bdcdff",
   disabled: colors.gray30,
   secondary: colors.gray60,
   lightestGray: colors.gray20,
@@ -23,6 +23,10 @@ const genericColors = {
 
 export default {
   ...genericColors,
+  backgroundImage:
+    "url(" +
+    "https://raw.githubusercontent.com/youozhan/design-ai/master/Frame05.png" +
+    ")",
   // Alerts
   alertErrorBorderColor: transparentize(genericColors.red, 0.8),
   alertErrorBackgroundColor: transparentize(genericColors.red, 0.8),

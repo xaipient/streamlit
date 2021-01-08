@@ -17,16 +17,12 @@
 
 // Overwrite some basic colors.
 $white: #273346;
-$gray-050: #fafafa;
 $gray-100: #354155;
-$gray-200: #354155;
 $gray-300: #e6eaf1;
 $gray-400: #d5dae5;
 $gray-600: #a3a8b8;
-$gray-700: #808495;
-$gray-800: #555867;
 $gray-900: #ffffff;
-$gray-1000: #0e1117;
+
 $black: $gray-900;
 
 // Custom color for our own use.
@@ -36,18 +32,7 @@ $gray-light: $gray-400;
 
 // Overwrite some theme colors.
 $primary: #bdcdff;
-$secondary: $gray;
-$light: $gray-100;
-$dark: $gray;
 $disabled: $gray-lighter;
-$danger: rgb(255, 145, 145);
-
-// Overwrite the components style
-$tag-bg: #7792e3;
-
-$primary-a50: change-color($primary, $alpha: 0.5);
-$white-a50: #ffffff88;
-$white-a25: #ffffff44;
 
 // Overwrite some theme fonts settings.
 $font-family-sans-serif: "Open Sans", sans-serif;
@@ -62,70 +47,9 @@ $line-height-base: 1.6;
 // Overwrite other theme settings.
 $border-radius: 0.25rem;
 $border-radius-sm: 0.25rem;
-$border-radius-large: 0.75rem;
-$btn-border-radius: $border-radius-large;
-
-// Custom z-index values
-$z-index-sidebar: 100;
-$z-index-menu-button: $z-index-sidebar + 10;
-$z-index-balloons: 1000000;
-$z-index-header: $z-index-balloons + 20;
-$z-index-sidebar-mobile: $z-index-balloons + 30;
-$z-index-popup-menu: $z-index-balloons + 40;
-$z-index-fullscreen-wrapper: $z-index-balloons + 50;
-
-// Custom values for our own use.
-$m1-2-font-size-sm: $font-size-sm / 2; // m1-2 = multiply by 1/2
-$m2-3-font-size-sm: $font-size-sm * 2 / 3; // m2-3 = multiply by 2/3
-$m1-2-font-size-base: $font-size-base / 2; // m1-2 = multiply by 1/2
-
-// Layout sizing
-$sidebar-width: 21rem;
-$content-max-width: 1024px; // This number comes from bootstrap.
-$header-height: 3.5rem;
-$top-margin: 5rem;
-$bottom-margin: $top-margin * 2;
-
-// Custom values for full screen use.
-$fullscreen-button: 2rem;
-$fullscreen-padding: 0.75rem;
-$fullscreen-padding-top: $header-height;
-
-$overlayBtn-height: 2.5rem;
-$overlayBtn-width: 2.5rem;
-$overlayBtn-opacity-visible: 0.25;
-$overlayBtn-opacity-active: 0.75;
-
-// Animation settings
-$normal-animation-duration: 300ms;
-
-// Progress Bar
-$progress-bar-height-sm: $font-size-sm;
-$progress-bar-height-md: 1rem;
-$progress-bar-height-lg: 1.25rem;
-$progress-bar-height-xl: 1.5rem;
-$progress-bar-height: $progress-bar-height-md;
-$progress-bar-margin: 0;
 
 // Code
 $code-color: #09ab3b;
 $kbd-color: $code-color;
 $kbd-bg: $gray-faint;
 $pre-color: $black;
-
-// Alert
-$alert-info-background-color: change-color($blue, $alpha: 0.1);
-$alert-info-border-color: change-color($blue, $alpha: 0.1);
-$alert-info-text-color: rgb(134, 207, 218);
-
-$alert-success-background-color: change-color($green, $alpha: 0.2);
-$alert-success-border-color: change-color($green, $alpha: 0.2);
-$alert-success-text-color: rgb(127, 211, 153);
-
-$alert-error-background-color: change-color($red, $alpha: 0.2);
-$alert-error-border-color: change-color($red, $alpha: 0.2);
-$alert-error-text-color: $danger;
-
-$alert-warning-background-color: change-color($yellow, $alpha: 0.2);
-$alert-warning-border-color: change-color($yellow, $alpha: 0.8);
-$alert-warning-text-color: rgb(249, 227, 156);

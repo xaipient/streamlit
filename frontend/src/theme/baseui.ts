@@ -93,7 +93,7 @@ export const themeOverrides = {
     primary: colors.primary,
     primaryA: colors.primary,
     accent: transparentize(colors.primary, 0.5),
-    tagPrimarySolidBackground: colors.primary,
+    tagPrimarySolidBackground: colors.tagBg,
     borderFocus: colors.primary,
     contentPrimary: colors.black,
     inputFill: colors.lightestGray,

@@ -73,7 +73,7 @@ export const StyledMenuItem = styled.li<StyledMenuItemProps>(
         }
 
     const highlightedStyles = isHighlighted && {
-      backgroundColor: theme.colors.lightGray,
+      backgroundColor: theme.colors.darkGray,
     }
 
     const recordingStyles = isRecording && {
